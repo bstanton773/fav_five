@@ -9,4 +9,5 @@ def index():
 
 @app.route('/favorites')
 def favorites():
-    return 'Favorites'
+    favorites = ['Friday', 'Thursday', 'Tuesday', 'Wednesday', 'Monday']
+    return render_template('favorites.html', favorites=favorites)

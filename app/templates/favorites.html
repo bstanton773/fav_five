@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} My Favorite Five {% endblock title %}
+
+{% block content %}
+<h2>My 5 Favorite Weekdays (In no order):</h2>
+
+<ul class="list-group">
+    {% for day in favorites %}
+        <li class="list-group-item">{{ day }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
